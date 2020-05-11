@@ -14,13 +14,20 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException{
 			
+			//Loads fxml
 			FXMLLoader loader=new FXMLLoader (getClass().getResource("Main.fxml"));
 			Parent root=loader.load();
+			//Creates scene from fxml
 			Scene scene =new Scene(root);
 			scene.getStylesheets.add(getClass().getResource("application.css"));
+			
+			//sets title of window
 			primaryStage.setTitle("TITLE");
+			//stops maximise and minimise buttons, optional for static 1 size application, change if dynamic
 			primaryStage.setResizable(false);
+			//assign the stage a scene
 			primaryStage.setScene(scene);
+			//Show the stage
 			primaryStage.show();
 		
 	}
