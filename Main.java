@@ -22,6 +22,8 @@ public class Main extends Application {
 			scene.getStylesheets.add(getClass().getResource("application.css"));
 			
 			//sets title of window
+=======
+>>>>>>> 09916280b38cf58728c231da2ae01c9eaa12dffd
 			primaryStage.setTitle("TITLE");
 			//stops maximise and minimise buttons, optional for static 1 size application, change if dynamic
 			primaryStage.setResizable(false);
