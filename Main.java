@@ -19,7 +19,7 @@ public class Main extends Application {
 			Parent root=loader.load();
 			//Creates scene from fxml
 			Scene scene =new Scene(root);
-			scene.getStylesheets.add(getClass().getResource("application.css"));
+			scene.getStylesheets.add(this.getClass().getResource("application.css").toExternalForm());
 			
 			//sets title of window
 			primaryStage.setTitle("TITLE");
